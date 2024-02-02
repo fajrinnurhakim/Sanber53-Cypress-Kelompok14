@@ -1,9 +1,9 @@
 # Kelompok 14
 1. Moch Afrizal 
 2. Febby Novianti Azhara
-3. Fajrin Nurhakim
+3. Fajrin Nurhakim (Edit Address & Cypress Configuration)
 4. Fajar Nugraha Sugiarto
-5. Aprida Sapitri Saragih 
+
 
 
 ## How to run this project
