@@ -3,7 +3,6 @@
 2. Febby Novianti Azhara
 3. Fajrin Nurhakim
 4. Fajar Nugraha Sugiarto
-5. Aprida Sapitri Saragih 
 
 
 ## How to run this project
