@@ -1,5 +1,6 @@
 import editAddress from "../../support/pageObject/edit-address";
 const addressData = require("../../fixtures/edit-address-data.json");
+("../../fixtures/edit-address-data.json");
 
 describe("Edit Address", () => {
     beforeEach(() => {
@@ -91,7 +92,7 @@ describe("Edit Address", () => {
         cy.get(
             "#form-validate > .actions-toolbar > div.primary > .action"
         ).click();
-        //verify success
+        //requiredField
         editAddress.requiredField();
     });
 });
