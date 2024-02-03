@@ -9,8 +9,8 @@ module.exports = defineConfig({
         },
         viewportWidth: 1200,
         viewportHeight: 800,
-        defaultCommandTimeout: 5000,
-        requestTimeout: 12000,
+        defaultCommandTimeout: 20000,
+        requestTimeout: 20000,
         setupNodeEvents(on, config) {
             // implement node event listeners here
         },

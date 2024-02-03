@@ -1,6 +1,6 @@
 import chooseProduct from "../../support/pageObject/choose-product";
 
-describe("choose-products", () => {
+describe("Choose Product", () => {
     beforeEach(() => {
         cy.visit(Cypress.env("BASE_URL"));
     });
@@ -12,7 +12,7 @@ describe("choose-products", () => {
     it("Choose Product - With Login", () => {
         cy.get('.authorization-link > a:contains("Sign In")').first().click();
         // login with command
-        cy.loginCommand("cek123@gmail.com", "Cek12345!");
+        cy.loginCommand("fajrin123@gmail.com", "Fajrin123!");
         // choose product
         chooseProduct.choose();
     });

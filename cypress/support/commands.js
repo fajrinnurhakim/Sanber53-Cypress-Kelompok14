@@ -16,6 +16,13 @@ Cypress.Commands.add("loginCommand", (email, password) => {
     cy.get("#pass").type(password);
     cy.get("#send2").click();
 });
+
+Cypress.Commands.add("loginCommandCheckout", (email, password) => {
+    cy.get("#customer-email").type(email);
+    cy.wait(5000);
+    cy.get("#customer-password").type(password);
+    cy.get("button.action.login.primary").click({ multiple: true });
+});
 //
 //
 // -- This is a child command --
