@@ -10,7 +10,7 @@ describe("Edit Address", () => {
     it("Edit Billing Address - Success", () => {
         cy.get('.authorization-link > a:contains("Sign In")').first().click();
         // login with command
-        cy.loginCommand("cek123@gmail.com", "Cek12345!");
+        cy.loginCommand("fajrin123@gmail.com", "Fajrin123!");
         // customer menu
         cy.wait(1000);
         cy.get(".customer-name").first().click();
