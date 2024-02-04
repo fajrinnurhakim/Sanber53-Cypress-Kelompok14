@@ -1,4 +1,4 @@
-import RegisterPage from "../../../support/pageObject/RegisterPage"
+import RegisterPage from "../../support/pageObject/register-page";
 describe('Create An Account', () => {
   beforeEach(() => {
     cy.visit(Cypress.env("BASE_URL"));
