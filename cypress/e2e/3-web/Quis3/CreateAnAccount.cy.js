@@ -1,7 +1,7 @@
 import RegisterPage from "../../../support/pageObject/RegisterPage"
 describe('Create An Account', () => {
   beforeEach(() => {
-    cy.visit('')
+    cy.visit(Cypress.env("BASE_URL"));
   })
 
   it('Register New Acc_firstnamenotfill_Negative', () => {

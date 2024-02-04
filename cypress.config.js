@@ -2,13 +2,12 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
     e2e: {
-        baseUrl: "https://magento.softwaretestingboard.com/",
-        Register_URL: "https://magento.softwaretestingboard.com/customer/account/create/",
+        
         env: {
-            Firstname: "febby",
-            Lastname: "testing",
-            email: "rarafebby56@gmail.com"
+            BASE_URL: "https://magento.softwaretestingboard.com/",
+            REGISTER_URL: "https://magento.softwaretestingboard.com/customer/account/create/",
         },
+
         setupNodeEvents(on, config) {
             // implement node event listeners here
         },
