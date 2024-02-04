@@ -1,4 +1,4 @@
-import viewAndUpdateChart from "../../support/pageObject/view-and-update-chart";
+import viewAndUpdateCart from "../../support/pageObject/view-and-update-cart";
 
 describe("View and update cart", () => {
     beforeEach(() => {
@@ -9,8 +9,8 @@ describe("View and update cart", () => {
         // login with command
         cy.loginCommand("fajrin123@gmail.com", "Fajrin123!");
         // View chart
-        viewAndUpdateChart.addChart();
-        viewAndUpdateChart.viewUpdate();
+        viewAndUpdateCart.addCart();
+        viewAndUpdateCart.viewUpdate();
     });
 
     it("view and delete product", () => {
@@ -18,8 +18,8 @@ describe("View and update cart", () => {
         // login with command
         cy.loginCommand("fajrin123@gmail.com", "Fajrin123!");
         // View chart
-        viewAndUpdateChart.addChart();
-        viewAndUpdateChart.viewDelete();
+        viewAndUpdateCart.addCart();
+        viewAndUpdateCart.viewDelete();
     });
 
     it("view cart when cart is empty", () => {
@@ -27,6 +27,6 @@ describe("View and update cart", () => {
         // login with command
         cy.loginCommand("fajrin123@gmail.com", "Fajrin123!");
         // View chart
-        viewAndUpdateChart.empetyChart();
+        viewAndUpdateCart.empetyCart();
     });
 });

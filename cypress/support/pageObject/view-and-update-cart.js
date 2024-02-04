@@ -1,12 +1,12 @@
 const chooseProductData = require("../../fixtures/choose-product-data.json");
 
-class viewAndUpdateChart {
-    empetyChart() {
+class viewAndUpdateCart {
+    empetyCart() {
         cy.get("a.action.showcart").click();
         cy.get("div.cart-empty").should("be.visible");
     }
 
-    addChart() {
+    addCart() {
         cy.get('.product-item-link[title="Breathe-Easy Tank"]').click();
         // content attribute
         cy.get('.swatch-option.text[option-label="M"]')
@@ -40,4 +40,4 @@ class viewAndUpdateChart {
     }
 }
 
-export default new viewAndUpdateChart();
+export default new viewAndUpdateCart();
