@@ -8,7 +8,7 @@ describe("View and update cart", () => {
         cy.get('.authorization-link > a:contains("Sign In")').first().click();
         // login with command
         cy.loginCommand("fajrin123@gmail.com", "Fajrin123!");
-        // View chart
+        // View cart
         viewAndUpdateCart.addCart();
         viewAndUpdateCart.viewUpdate();
     });
@@ -17,7 +17,7 @@ describe("View and update cart", () => {
         cy.get('.authorization-link > a:contains("Sign In")').first().click();
         // login with command
         cy.loginCommand("fajrin123@gmail.com", "Fajrin123!");
-        // View chart
+        // View cart
         viewAndUpdateCart.addCart();
         viewAndUpdateCart.viewDelete();
     });
@@ -26,7 +26,7 @@ describe("View and update cart", () => {
         cy.get('.authorization-link > a:contains("Sign In")').first().click();
         // login with command
         cy.loginCommand("fajrin123@gmail.com", "Fajrin123!");
-        // View chart
+        // View cart
         viewAndUpdateCart.empetyCart();
     });
 });
