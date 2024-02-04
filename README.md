@@ -2,7 +2,7 @@
 
 ### Group Member Names and Tasks
 
-1. Moch Afrizal
+1. Moch Afrizal (login, view & update, shopping cart)
 2. Febby Novianti Azhara
 3. Fajrin Nurhakim (Cypress Configuration, Edit Address, Choose Product, Proceed to Checkout, Add Review)
 4. Fajar Nugraha Sugiarto
