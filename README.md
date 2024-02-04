@@ -4,7 +4,7 @@
 
 1. Moch Afrizal (login, view & update, shopping cart)
 2. Febby Novianti Azhara (Create An Account)
-3. Fajrin Nurhakim (Cypress Configuration, Edit Address, Choose Product, Proceed to Checkout, Add Review)
+3. Fajrin Nurhakim (Cypress Configuration, Edit Address, Choose Product, Proceed to Checkout, Add Review, View and update shopping chart)
 4. Fajar Nugraha Sugiarto
 
 ## Getting Started
