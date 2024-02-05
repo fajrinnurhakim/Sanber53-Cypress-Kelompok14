@@ -1,5 +1,3 @@
-import editAccountInformation from "../../support/pageObject/edit-account-information";
-
 describe("Edit Account Information", () => {
     beforeEach(() => {
         cy.visit(Cypress.env("BASE_URL"));
@@ -9,6 +7,7 @@ describe("Edit Account Information", () => {
         cy.get('.authorization-link > a:contains("Sign In")').first().click();
         // login with command
         cy.loginCommand("fajarnugrahasugiarto@gmail.com", "Fajarns22");
+        // cy.loginCommand("fajarnug@gmail.com", "Fajarns22");
         // customer menu
         cy.wait(1000);
         cy.get(".customer-name").first().click();
@@ -16,18 +15,19 @@ describe("Edit Account Information", () => {
             .first()
             .click();
         //edit account information
-        cy.get(".box-account-information > .box-actions > .action > span").click();
-        cy.get("#firstname").clear().type(editAccountInformation["firstname"]);
-        cy.get("#lastname").clear().type(editAccountInformation["lastname"]);
-        cy.get("#email").clear().type(editAccountInformation["email"]);
-        cy.get("#password").clear().type(editAccountInformation["password"]);
-        cy.get("#newpassword").clear().type(editAccountInformation["newpassword"]);
-        cy.get("#confirmpassword").clear().type(editAccountInformation["confirmpassword"]);
+        cy.contains(".box-actions a", "Edit").click();
+        cy.get("#firstname").clear().type("Fajar");
+        cy.get("#lastname").clear().type("Nugraha S");
+        cy.get("#change-email.checkbox").click();
+        cy.wait(1000);
+        // cy.get("#email").clear().type("fajarnugrahasugiarto@gmail.com");
+        cy.get("#email").clear().type("fajarnug@gmail.com");
+        cy.get("#current-password").clear().type("Fajarns22");
         //button save
-        cy.get(
-            "#form-validate > .actions-toolbar > div.primary > .action"
-        ).click();
+        cy.get("button.action.save.primary").click();
         // verify success
-        editAccountInformation.verifySuccess();
+        cy.get(".messages .message-success")
+            .should("be.visible")
+            .contains("You saved the account information.");
     });
 });
