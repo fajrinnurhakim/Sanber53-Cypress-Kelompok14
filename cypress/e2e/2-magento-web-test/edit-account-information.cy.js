@@ -1,5 +1,3 @@
-import editAccountInformation from "../../support/pageObject/edit-account-information";
-
 describe("Edit Account Information", () => {
     beforeEach(() => {
         cy.visit(Cypress.env("BASE_URL"));
