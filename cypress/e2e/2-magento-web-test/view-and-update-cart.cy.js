@@ -7,7 +7,7 @@ describe("View and update cart", () => {
     it.only("view and edit cart", () => {
         cy.get('.authorization-link > a:contains("Sign In")').first().click();
         // login with command
-        cy.loginCommand("fajrin123@gmail.com", "Fajrin123!");
+        cy.loginCommand("rarafebbyy123@gmail.com", "Admin123!");
         // View cart
         viewAndUpdateCart.addCart();
         viewAndUpdateCart.viewUpdate();
@@ -16,7 +16,7 @@ describe("View and update cart", () => {
     it("view and delete product", () => {
         cy.get('.authorization-link > a:contains("Sign In")').first().click();
         // login with command
-        cy.loginCommand("fajrin123@gmail.com", "Fajrin123!");
+        cy.loginCommand("rarafebbyy123@gmail.com", "Admin123!");
         // View cart
         viewAndUpdateCart.addCart();
         viewAndUpdateCart.viewDelete();
