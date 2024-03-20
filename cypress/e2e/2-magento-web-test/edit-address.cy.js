@@ -11,7 +11,7 @@ describe("Edit Address", () => {
         // login with command
         cy.loginCommand("fajrin123@gmail.com", "Fajrin123!");
         // customer menu
-        cy.wait(1000);
+        cy.wait(2000);
         cy.get(".customer-name").first().click();
         cy.get(".customer-menu > .header.links > li:first-child > a")
             .first()
