@@ -8,7 +8,9 @@ describe("Proceed to Checkout", () => {
     it("Proceed To Checkout - Login First", () => {
         cy.get('.authorization-link > a:contains("Sign In")').first().click();
         // login with command
-        cy.loginCommand("rarafebbyy123@gmail.com", "Admin123!");
+        cy.get("#email").type("rarafebbyy123@gmail.com");
+        cy.get("#pass").type("Admin123!");
+        cy.get(".action.login.primary").click();
         cy.wait(5000);
         cy.get("a.action.showcart").click();
         cy.get("#top-cart-btn-checkout").click({ force: true });
