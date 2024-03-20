@@ -40,7 +40,7 @@ describe("Edit Address", () => {
         // login with command
         cy.loginCommand("cek123@gmail.com", "Cek12345!");
         // customer menu
-        cy.wait(1000);
+        cy.wait(2000);
         cy.get(".customer-name").first().click();
         cy.get(".customer-menu > .header.links > li:first-child > a")
             .first()

@@ -9,7 +9,7 @@ describe("Create An Account", () => {
         RegisterPage.VisitRegis();
         cy.get(RegisterPage.fsn);
         cy.get(RegisterPage.lsn).type("Testing");
-        cy.get(RegisterPage.mail).type("rarafebbyyy@gmail.com");
+        cy.get(RegisterPage.mail).type("rarafebbyy123@gmail.com");
         cy.get(RegisterPage.pass).type("Admin123!");
         cy.get(RegisterPage.konfirmpas).type("Admin123!");
         RegisterPage.ClickBut();
@@ -21,7 +21,7 @@ describe("Create An Account", () => {
         RegisterPage.VisitRegis();
         cy.get(RegisterPage.fsn).type("Febby");
         cy.get(RegisterPage.lsn);
-        cy.get(RegisterPage.mail).type("rarafebbyyy@gmail.com");
+        cy.get(RegisterPage.mail).type("rarafebbyy123@gmail.com");
         cy.get(RegisterPage.pass).type("Admin123!");
         cy.get(RegisterPage.konfirmpas).type("Admin123!");
         RegisterPage.ClickBut();
@@ -79,7 +79,7 @@ describe("Create An Account", () => {
         RegisterPage.VisitRegis();
         cy.get(RegisterPage.fsn).type("Febby");
         cy.get(RegisterPage.lsn).type("Testing");
-        cy.get(RegisterPage.mail).type("rarafebbyyy@gmail.com");
+        cy.get(RegisterPage.mail).type("rarafebbyy123@gmail.com");
         cy.get(RegisterPage.pass);
         cy.get(RegisterPage.konfirmpas);
         RegisterPage.ClickBut();
@@ -93,7 +93,7 @@ describe("Create An Account", () => {
         RegisterPage.VisitRegis();
         cy.get(RegisterPage.fsn).type("Febby");
         cy.get(RegisterPage.lsn).type("Testing");
-        cy.get(RegisterPage.mail).type("rarafebbyyy@gmail.com");
+        cy.get(RegisterPage.mail).type("rarafebbyy123@gmail.com");
         cy.get(RegisterPage.pass).type("Admin");
         cy.get(RegisterPage.konfirmpas).type("Admin");
         RegisterPage.ClickBut();
@@ -106,7 +106,7 @@ describe("Create An Account", () => {
         RegisterPage.VisitRegis();
         cy.get(RegisterPage.fsn).type("Febby");
         cy.get(RegisterPage.lsn).type("Testing");
-        cy.get(RegisterPage.mail).type("rarafebbyyy@gmail.com");
+        cy.get(RegisterPage.mail).type("rarafebbyy123@gmail.com");
         cy.get(RegisterPage.pass).type("Admin123!");
         cy.get(RegisterPage.konfirmpas);
         RegisterPage.ClickBut();
@@ -118,7 +118,7 @@ describe("Create An Account", () => {
         RegisterPage.VisitRegis();
         cy.get(RegisterPage.fsn).type("Febby");
         cy.get(RegisterPage.lsn).type("Testing");
-        cy.get(RegisterPage.mail).type("rarafebbyyy@gmail.com");
+        cy.get(RegisterPage.mail).type("rarafebbyy123@gmail.com");
         cy.get(RegisterPage.pass).type("Admin123!");
         cy.get(RegisterPage.konfirmpas).type("Admin123");
         RegisterPage.ClickBut();
@@ -130,7 +130,7 @@ describe("Create An Account", () => {
         RegisterPage.VisitRegis();
         cy.get(RegisterPage.fsn).type("Febby");
         cy.get(RegisterPage.lsn).type("Testing");
-        cy.get(RegisterPage.mail).type("rarafebbyyy@gmail.com");
+        cy.get(RegisterPage.mail).type("rarafebbyy123@gmail.com");
         cy.get(RegisterPage.pass).type("Admin123!");
         cy.get(RegisterPage.konfirmpas).type("Admin123!");
         RegisterPage.ClickBut();
