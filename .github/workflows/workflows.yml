@@ -1,0 +1,45 @@
+name: Cypress End-to-end tests
+on: push
+jobs:
+    cypress-run:
+        runs-on: ubuntu-22.04
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+
+            - name: create an account
+              uses: cypress-io/github-action@v6
+              with:
+                  spec: cypress/e2e/2-magento-web-test/create-an-account.cy.js
+            - name: login
+              uses: cypress-io/github-action@v6
+              with:
+                  spec: cypress/e2e/2-magento-web-test/login-test.cy.js
+            - name: edit address
+              uses: cypress-io/github-action@v6
+              with:
+                  spec: cypress/e2e/2-magento-web-test/edit-address.cy.js
+            - name: edit account
+              uses: cypress-io/github-action@v6
+              with:
+                  spec: cypress/e2e/2-magento-web-test/edit-account-information.cy.js
+            - name: choose product
+              uses: cypress-io/github-action@v6
+              with:
+                  spec: cypress/e2e/2-magento-web-test/choose-product.cy.js
+            - name: proceed to checkout
+              uses: cypress-io/github-action@v6
+              with:
+                  spec: cypress/e2e/2-magento-web-test/proceed-to-checkout.cy.js
+            - name: choose product2
+              uses: cypress-io/github-action@v6
+              with:
+                  spec: cypress/e2e/2-magento-web-test/choose-product.cy.js
+            - name: view and update chart
+              uses: cypress-io/github-action@v6
+              with:
+                  spec: cypress/e2e/2-magento-web-test/view-and-update-cart.cy.js
+            - name: add review
+              uses: cypress-io/github-action@v6
+              with:
+                  spec: cypress/e2e/2-magento-web-test/add-review.cy.js
