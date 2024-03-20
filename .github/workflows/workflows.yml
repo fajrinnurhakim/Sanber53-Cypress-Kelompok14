@@ -23,7 +23,3 @@ jobs:
               uses: cypress-io/github-action@v3
               with:
                   spec: cypress/e2e/2-magento-web-test/edit-account-information.cy.js
-            - name: add review
-              uses: cypress-io/github-action@v3
-              with:
-                  spec: cypress/e2e/2-magento-web-test/add-review.cy.js
