@@ -15,7 +15,9 @@ describe("example to-do app", () => {
     it("Add Review - required", () => {
         cy.get('.authorization-link > a:contains("Sign In")').first().click();
         // login with command
-        cy.loginCommand("fajrin123@gmail.com", "Fajrin123!");
+        cy.get("#email").type("rarafebbyy123@gmail.com");
+        cy.get("#pass").type("Admin123!");
+        cy.get(".action.login.primary").click();
         // Review
         addReview.required();
     });
