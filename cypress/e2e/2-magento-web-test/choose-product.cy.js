@@ -5,10 +5,16 @@ describe("Choose Product", () => {
         cy.visit(Cypress.env("BASE_URL"));
     });
 
-    it("Choose Product - With Login", () => {
+    it("Choose Product - Without Login", () => {
+        // choose product
+        chooseProduct.choose();
+    });
+    it.only("Choose Product - With Login", () => {
         cy.get('.authorization-link > a:contains("Sign In")').first().click();
         // login with command
-        cy.loginCommand("rarafebbyy123@gmail.com", "Admin123!");
+        cy.get("#email").type("rarafebbyy123@gmail.com");
+        cy.get("#pass").type("Admin123!");
+        cy.get(".action.login.primary").click();
         // choose product
         chooseProduct.choose();
     });
