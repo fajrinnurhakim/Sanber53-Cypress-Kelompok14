@@ -6,7 +6,7 @@ describe("Edit Account Information", () => {
     it("Edit Account Information - Success", () => {
         cy.get('.authorization-link > a:contains("Sign In")').first().click();
         // login with command
-        cy.loginCommand("fajarnugrahasugiarto@gmail.com", "Fajarns22");
+        cy.loginCommand("rarafebbyy123@gmail.com", "Admin123!");
         // cy.loginCommand("fajarnug@gmail.com", "Fajarns22");
         // customer menu
         cy.wait(1000);
@@ -21,8 +21,8 @@ describe("Edit Account Information", () => {
         cy.get("#change-email.checkbox").click();
         cy.wait(1000);
         // cy.get("#email").clear().type("fajarnugrahasugiarto@gmail.com");
-        cy.get("#email").clear().type("fajarnug@gmail.com");
-        cy.get("#current-password").clear().type("Fajarns22");
+        cy.get("#email").clear().type("rarafebbyy123@gmail.com");
+        cy.get("#current-password").clear().type("Admin123!");
         //button save
         cy.get("button.action.save.primary").click();
         // verify success

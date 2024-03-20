@@ -9,7 +9,7 @@ describe("Choose Product", () => {
         // choose product
         chooseProduct.choose();
     });
-    it.only("Choose Product - With Login", () => {
+    it("Choose Product - With Login", () => {
         cy.get('.authorization-link > a:contains("Sign In")').first().click();
         // login with command
         cy.get("#email").type("rarafebbyy123@gmail.com");
