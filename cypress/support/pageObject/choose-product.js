@@ -3,7 +3,7 @@ const chooseProductData = require("../../fixtures/choose-product-data.json");
 class chooseProduct {
     choose() {
         // choose product
-        cy.get(".product-item-link").eq(2).click();
+        cy.get(".product-item-link").eq(1).click();
         // content attribute
         cy.get('.swatch-option.text[option-label="M"]').click();
         cy.get('.swatch-option.color[option-label="Purple"]').click();
