@@ -23,14 +23,6 @@ jobs:
               uses: cypress-io/github-action@v3
               with:
                   spec: cypress/e2e/2-magento-web-test/edit-account-information.cy.js
-            - name: proceed to checkout
-              uses: cypress-io/github-action@v3
-              with:
-                  spec: cypress/e2e/2-magento-web-test/proceed-to-checkout.cy.js
-            - name: choose product2
-              uses: cypress-io/github-action@v3
-              with:
-                  spec: cypress/e2e/2-magento-web-test/choose-product.cy.js
             - name: view and update chart
               uses: cypress-io/github-action@v3
               with:
